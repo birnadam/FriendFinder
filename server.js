@@ -12,7 +12,7 @@ app.use(express.text());
 app.use(express.json({ type: "application/vnd.api+json" }));
 
 // API and HTML routes
-require("./app/routing/apiRoutes.js")(app);
+//require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
 // Checking if server is live
