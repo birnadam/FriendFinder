@@ -39,5 +39,5 @@ Two ways:
 <br>![pageTwoA image](https://github.com/birnapwnsu/FriendFinder/blob/master/screenshots/pageTwoA.JPG?raw=true)
 <br>![pageTwoB image](https://github.com/birnapwnsu/FriendFinder/blob/master/screenshots/pageTwoB.JPG?raw=true)
 
-### Modal poup
+### Modal popup
 <br>![Modal image](https://github.com/birnapwnsu/FriendFinder/blob/master/screenshots/Modal.JPG?raw=true)
