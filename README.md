@@ -32,7 +32,12 @@ Two ways:
   - fill out the information and submit, and a modal will pop up with your friend!
 
 ## Screenshots of working app
+### Home page
 <br>![pageOne image](https://github.com/birnapwnsu/FriendFinder/blob/master/screenshots/pageOne.JPG?raw=true)
+
+### Survey page
 <br>![pageTwoA image](https://github.com/birnapwnsu/FriendFinder/blob/master/screenshots/pageTwoA.JPG?raw=true)
 <br>![pageTwoB image](https://github.com/birnapwnsu/FriendFinder/blob/master/screenshots/pageTwoB.JPG?raw=true)
+
+### Modal poup
 <br>![Modal image](https://github.com/birnapwnsu/FriendFinder/blob/master/screenshots/Modal.JPG?raw=true)
