@@ -1,168 +1,171 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Companion Canyon</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container content">
-            <h1 class="mx-2">Survey</h1>
-            <p class="mx-2">Truthfully answer the following questions.</p> 
-            <p class="mx-2">Consider 1 as "Absolutely Not" and 5 as "Guilty as Charged".</p>
 
-            <form class="mx-2">
-                <h4>About You</h4>
-                <div class="form-group">
-                    <input id="name" type="text" class="form-control" placeholder="Name (Required)">
-                </div>
-                <div class="form-group">
-                    <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
-                </div>
-                <div class="form-group">
-                    <h4>Question 1</h4>
-                    <label for="question1">Pineapples go on pizza.</label>
-                    <select class="form-control" id="question1">
-                        <option value="empty"></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <h4>Question 2</h4>
-                    <label for="question2">Cereal before milk.</label>
-                    <select class="form-control" id="question2">
-                        <option value="empty"></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <h4>Question 3</h4>
-                    <label for="question3">"It's pronounced JIF."</label>
-                    <select class="form-control" id="question3">
-                        <option value="empty"></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <h4>Question 4</h4>
-                    <label for="question4">Toilet paper rolls over.</label>
-                    <select class="form-control" id="question4">
-                        <option value="empty"></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <h4>Question 5</h4>
-                    <label for="question5">Steak medium-rare.</label>
-                    <select class="form-control" id="question5">
-                        <option value="empty"></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <h4>Question 6</h4>
-                    <label for="question6">Sriracha on everything.</label>
-                    <select class="form-control" id="question6">
-                        <option value="empty"></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <h4>Question 7</h4>
-                    <label for="question7">Tacos over fried chicken.</label>
-                    <select class="form-control" id="question7">
-                        <option value="empty"></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <h4>Question 8</h4>
-                    <label for="question8">The book was better.</label>
-                    <select class="form-control" id="question8">
-                        <option value="empty"></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <h4>Question 9</h4>
-                    <label for="question9">PC games over console games.</label>
-                    <select class="form-control" id="question9">
-                        <option value="empty"></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <h4>Question 10</h4>
-                    <label for="question10">Goku is better than Superman.</label>
-                    <select class="form-control" id="question10">
-                        <option value="empty"></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
-            </form>
-            <div class="text-center">
-                <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+<head>
+    <title>Companion Canyon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container content">
+        <h1 class="mx-2">Survey</h1>
+        <p class="mx-2">Truthfully answer the following questions.</p>
+        <p class="mx-2">Consider 1 as "Absolutely Not" and 5 as "Guilty as Charged".</p>
+
+        <form class="mx-2">
+            <h4>About You</h4>
+            <div class="form-group">
+                <input id="name" type="text" class="form-control" placeholder="Name (Required)">
             </div>
+            <div class="form-group">
+                <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+            </div>
+            <div class="form-group">
+                <h4>Question 1</h4>
+                <label for="question1">Pineapples go on pizza.</label>
+                <select class="form-control" id="question1">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question 2</h4>
+                <label for="question2">Cereal before milk.</label>
+                <select class="form-control" id="question2">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question 3</h4>
+                <label for="question3">"It's pronounced JIF."</label>
+                <select class="form-control" id="question3">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question 4</h4>
+                <label for="question4">Toilet paper rolls over.</label>
+                <select class="form-control" id="question4">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question 5</h4>
+                <label for="question5">Steak medium-rare.</label>
+                <select class="form-control" id="question5">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question 6</h4>
+                <label for="question6">Sriracha on everything.</label>
+                <select class="form-control" id="question6">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question 7</h4>
+                <label for="question7">Tacos over fried chicken.</label>
+                <select class="form-control" id="question7">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question 8</h4>
+                <label for="question8">The book was better.</label>
+                <select class="form-control" id="question8">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question 9</h4>
+                <label for="question9">PC games over console games.</label>
+                <select class="form-control" id="question9">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h4>Question 10</h4>
+                <label for="question10">Goku is better than Superman.</label>
+                <select class="form-control" id="question10">
+                    <option value="empty"></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </form>
+        <div class="text-center">
+            <button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+        </div>
 
-            <div id="results-modal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button class="close" data-dismiss="modal">&times;</button>
-                            <h2 class="modal-title"><strong>Your companion</strong></h2>
-                        </div>
-                        <div class="modal-body">
-                            <h2 id="companion"></h2>
-                            <img id="companionPhoto" src="https://media.licdn.com/dms/image/C5603AQFW05E4_i5WZA/profile-displayphoto-shrink_200_200/0?e=1568246400&v=beta&t=2pLkdVO50USI_IA9XnJ8PeTALOBAg7NuSi1ROnC0MSQ"
-                                alt="">
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+        <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title"><strong>Your companion</strong></h2>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="companion"></h2>
+                        <img id="companionPhoto"
+                            src="https://media.licdn.com/dms/image/C5603AQFW05E4_i5WZA/profile-displayphoto-shrink_200_200/0?e=1568246400&v=beta&t=2pLkdVO50USI_IA9XnJ8PeTALOBAg7NuSi1ROnC0MSQ"
+                            alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
+        </div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -214,5 +217,6 @@
                 }
             });
         </script>
-    </body>
+</body>
+
 </html>

@@ -12,6 +12,6 @@ require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
 // Checking if server is live
-app.listen(PORT, function() {
+app.listen(PORT, function () {
 	console.log("Server started on PORT: " + PORT);
 });

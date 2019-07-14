@@ -1,18 +1,18 @@
 var friends = require("../data/friends");
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Return friends as JSON
-  app.get("/api/friends", function(req, res) {
+  app.get("/api/friends", function (req, res) {
     res.json(friends);
   });
 
-  app.post("/api/friends", function(req, res) {
+  app.post("/api/friends", function (req, res) {
     console.log(req.body.scores);
 
     // Collect user's details
     var user = req.body;
 
-    for(var i = 0; i < user.scores.length; i++) {
+    for (var i = 0; i < user.scores.length; i++) {
       user.scores[i] = parseInt(user.scores[i]);
     }
 
@@ -22,15 +22,15 @@ module.exports = function(app) {
 
     // Loop through each question and check the difference per question 
     // Add each diffference to the total difference
-    for(var i = 0; i < friends.length; i++) {
+    for (var i = 0; i < friends.length; i++) {
       var totalDifference = 0;
-      for(var j = 0; j < friends[i].scores.length; j++) {
+      for (var j = 0; j < friends[i].scores.length; j++) {
         var difference = Math.abs(user.scores[j] - friends[i].scores[j]);
         totalDifference += difference;
       }
 
       // Check if there if that total difference is lower than the minimum difference, and if so replace it
-      if(totalDifference < minimumDifference) {
+      if (totalDifference < minimumDifference) {
         companionIndex = i;
         minimumDifference = totalDifference;
       }
